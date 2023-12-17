@@ -6,11 +6,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column;
-  flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #booking-widget #booking-form .form-group {
   margin: 20px;
@@ -57,7 +57,7 @@
   outline: none;
   border-color: #66afe9;
   -webkit-box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
-  box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+          box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
 }
 
 .booking-widget .card-header > div {
@@ -65,15 +65,15 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column;
-  flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .booking-widget .time-slot:hover {
@@ -107,11 +107,11 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row;
-  flex-flow: row;
+      -ms-flex-flow: row;
+          flex-flow: row;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  width: 100;
+      flex-wrap: wrap;
+  width: 100%;
 }
 
 .booking-widget #party-size label,
@@ -143,11 +143,11 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row;
-  flex-flow: row;
+      -ms-flex-flow: row;
+          flex-flow: row;
   -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 #booking-widget .widget-title,
@@ -158,11 +158,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column;
-  flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #booking-widget .container {
@@ -176,12 +176,12 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column;
-  flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
   justify-items: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #booking-widget #booking-form .form-group {
@@ -204,9 +204,22 @@
   background-color: #d49e6b;
   color: #343a40;
   margin: 20px;
-  -webkit-transition: background-color color 0.2s ease, visibility 0s;
-  -o-transition: background-color color 0.2s ease, visibility 0s;
-  transition: background-color color 0.2s ease, visibility 0s;
+  -webkit-transition-property: color, background-color, border-color,
+    fill, stroke, -webkit-text-decoration-color;
+  transition-property: color, background-color, border-color,
+    fill, stroke, -webkit-text-decoration-color;
+  -o-transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+       -o-transition-duration: 150ms;
+          transition-duration: 150ms;
 }
 #booking-widget #book-button:hover {
   color: white;
@@ -224,8 +237,7 @@
 
 #booking-widget input[type="radio"] + span {
   color: #343a40;
-  margin: 0px;
-  border: 1px solid #ccc;
+  border: 2px solid #d49e6b;
   cursor: pointer;
   min-width: 25px;
   text-align: center;
@@ -237,12 +249,28 @@
   position: relative;
   cursor: pointer;
   text-wrap: nowrap;
-  padding: 5px 18px;
+  padding: 3px 25px;
   background-color: #d49e6b;
+  -webkit-transition-property: color, background-color, border-color,
+    fill, stroke, -webkit-text-decoration-color;
+  transition-property: color, background-color, border-color,
+    fill, stroke, -webkit-text-decoration-color;
+  -o-transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+       -o-transition-duration: 150ms;
+          transition-duration: 150ms;
 }
 #booking-widget input[type="radio"] + span:hover {
-  color: white;
-  background-color: #203832;
+  background-color: transparent;
+  border-color: #203832;
 }
 
 #booking-widget input[type="radio"] ~ .WY4uqX {
@@ -250,7 +278,14 @@
 }
 
 #booking-widget input[type="radio"]:checked + span {
-  background-color: lightgray;
+  color: white;
+  border-color: #203832;
+  background-color: #203832;
+}
+#booking-widget input[type="radio"] + span:active {
+  color: white;
+  border-color: #365c51;
+  background-color: #365c51;
 }
 
 #booking-widget .dialog {
@@ -285,7 +320,7 @@
   display: block;
   height: var(--checkboxSize);
   -webkit-margin-start: var(--checkmarkMargin_start);
-  margin-inline-start: var(--checkmarkMargin_start);
+          margin-inline-start: var(--checkmarkMargin_start);
   min-width: var(--checkboxSize);
   pointer-events: none;
   position: relative;
@@ -298,8 +333,8 @@
   position: absolute;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 50%;
 }
 
